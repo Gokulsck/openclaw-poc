@@ -1,0 +1,62 @@
+{
+  "skills": {
+    "supplement-tracker": {
+      "enabled": true,
+      "name": "Supplement Tracker",
+      "description": "Track daily supplement intake and compliance",
+      "version": "1.0.0",
+      "settings": {
+        "track_compliance": true,
+        "weekly_reports": true,
+        "missed_dose_alerts": true
+      }
+    },
+    "sleep-recovery": {
+      "enabled": true,
+      "name": "Sleep & Recovery Monitor",
+      "description": "Track sleep quality and recovery metrics",
+      "version": "1.0.0",
+      "integrations": {
+        "whoop": false,
+        "oura_ring": false,
+        "apple_health": false
+      },
+      "settings": {
+        "target_sleep_hours": 8,
+        "bedtime": "23:00",
+        "wake_time": "07:00",
+        "generate_recommendations": true
+      }
+    },
+    "workout-scheduler": {
+      "enabled": true,
+      "name": "Workout Scheduler",
+      "description": "Manage gym and CrossFit schedules",
+      "version": "1.0.0",
+      "settings": {
+        "default_workout_duration": 60,
+        "track_performance": true,
+        "auto_checkin": false,
+        "performance_tracking": true
+      }
+    },
+    "daily-reminders": {
+      "enabled": true,
+      "name": "Daily Reminders",
+      "description": "Automated proactive reminders",
+      "version": "1.0.0",
+      "settings": {
+        "enable_morning_reminder": true,
+        "enable_pre_workout_reminder": true,
+        "enable_evening_reminder": true,
+        "enable_sleep_reminder": true,
+        "customize_times": true
+      }
+    }
+  },
+  "default_responses": {
+    "greeting": "Hey! 👋 I'm your daily routine assistant. I can help you track supplements, sleep, workouts, and keep you on schedule. What can I help with today?",
+    "help": "Here's what I can do:\n\n💊 **Supplements**: Track daily intake and compliance\n😴 **Sleep**: Monitor quality and get recovery recommendations\n💪 **Workouts**: Schedule and track gym/CrossFit sessions\n⏰ **Reminders**: Keep you on schedule with daily check-ins\n\nWhat would you like help with?",
+    "unclear": "I didn't quite understand that. Could you clarify? Try: 'I took my supplements', 'Schedule workout', or 'Show me my stats'"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "providers": {
+    "active_provider": "claude",
+    "claude": {
+      "enabled": true,
+      "name": "Anthropic Claude",
+      "api_key": "sk-ant-v1-xxxxxxxxxxxxx",
+      "model": "claude-3-5-sonnet-20241022",
+      "base_url": "https://api.anthropic.com",
+      "settings": {
+        "temperature": 0.7,
+        "max_tokens": 4096,
+        "timeout": 30000
+      }
+    },
+    "openai": {
+      "enabled": false,
+      "name": "OpenAI",
+      "api_key": "sk-proj-xxxxxxxxxxxxx",
+      "model": "gpt-4o",
+      "base_url": "https://api.openai.com/v1",
+      "settings": {
+        "temperature": 0.7,
+        "max_tokens": 4096,
+        "timeout": 30000
+      }
+    },
+    "local": {
+      "enabled": false,
+      "name": "Local Model (Ollama)",
+      "api_key": null,
+      "model": "llama2",
+      "base_url": "http://localhost:11434",
+      "settings": {
+        "temperature": 0.7,
+        "max_tokens": 4096,
+        "timeout": 30000
+      }
+    }
+  },
+  "api_keys": {
+    "claude_api_key": "sk-ant-v1-xxxxxxxxxxxxx",
+    "openai_api_key": "sk-proj-xxxxxxxxxxxxx",
+    "local_model_url": "http://localhost:11434"
+  },
+  "fallback_provider": "claude",
+  "retry_policy": {
+    "max_retries": 3,
+    "retry_delay_ms": 1000,
+    "exponential_backoff": true
+  }
+}
